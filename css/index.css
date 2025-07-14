@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('../font/emulogic-font/Emulogic-zrEw.ttf') format('truetype');
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: black;
+  color: rgb(240, 240, 28);
+  font-family: 'MyFont', sans-serif;
+  padding-top: 50px ;
+}
+
+main{
+  flex:1;
+}
+
+.title {
+  text-align: center;
+  font-size: 100px;
+  margin-top: 50px;
+}
+
+.message{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.pr{
+  margin-top: 40px;
+  font-size: 42px;
+  text-align: center;
+}
+
+.time {
+    display: flex;
+    gap: 100px; 
+    margin-bottom: 30px;
+    justify-content: center;
+    
+}
+
+.mins,.secs {
+    display: flex;
+    align-items: center; 
+    gap: 10px;        
+}
+
+label {
+    font-size: 50px;
+}
+
+input[type="number"] {
+    padding: 5px;
+    font-size: 1rem;
+    height: 30px;
+    width: 50px;
+    border-color: red;
+    font-family: 'MyFont', sans-serif;
+
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: red;
+}
+
+footer{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+
+
+
+.submitButton{
+  background-color: red;
+  color:white;
+  font-family: 'MyFont', sans-serif;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-style: none;
+  margin-top: 40px;
+}

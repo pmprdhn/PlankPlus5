@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plank+5</title>
+  <link rel="icon" href="assests/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <main>
+    <div class="title">Plank+5</div>
+      <div class="message">Enter your PR in plank</div>
+      <div class="pr">
+        <form onsubmit="start(event)">
+          <div class="time">
+            <div class="mins">
+              <label for="mins">Minutes:</label>
+              <input type="number" id="mins" min="0" max="10" required>
+            </div>
+            <div class="secs">
+              <label for="secs">Seconds: </label>
+              <input type="number" id="secs" min="0" max="59" required>
+            </div>  
+          </div>
+        <button class="submitButton" type="submit">GO!</button>
+      </form>
+      </div>
+  
+  </main>
+
+  <footer>
+    <p>Built by Pratik Man Pradhan • <a href="https://github.com/pmprdhn" target="_blank">GitHub</a></p>
+  </footer>
+  
+  
+
+
+<script>
+
+function start(event){
+
+  event.preventDefault();
+  const mins = document.getElementById("mins").value;
+  const secs = document.getElementById("secs").value;
+
+  window.location.href= `plank.html?mins=${mins}&secs=${secs}`;
+}
+
+
+
+function padInput(id){
+  const input = document.getElementById(id);
+  input.addEventListener('input', () => {
+  let value = parseInt(input.value);
+  if (!isNaN(value)) {
+    input.value = value.toString().padStart(2, '0');
+  }
+}); 
+}
+
+padInput("mins");
+padInput("secs");
+
+
+</script>
+  
+</body>
+</html>

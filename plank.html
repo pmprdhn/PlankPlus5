@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plank+5</title>
+  <link rel="icon" href="assests/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/plank.css">
+</head>
+<body>
+  <main>
+    <div class="title">
+      Plank+5
+    </div>
+    <div class="countdown" id="countdown"></div>
+    <div id="message" class="message">Today we are setting a new PR!</div>
+    <div class="stopwatch" id="stopwatch"></div>
+
+    <div class="failedInfo">
+      <label for="retry" id="labelForRestart">Failed?</label>
+     <button id="restart" onclick="location.reload()" name="retry" class="runtItBackButton">RUN IT BACK</button>
+     
+    </div>
+    <div class="newPRInfo">
+      <label for="changePR" id="labelForNewPR">Want to Change PR?</label>
+     <button id="newPR" onclick="window.location.href='index.html'" name="changePR" class="changePRButton">Change PR</button>
+    </div>
+
+    
+  </main>
+  <footer>
+    <p>Built by Pratik Man Pradhan • <a href="https://github.com/pmprdhn" target="_blank">GitHub</a></p>
+  </footer>
+  
+
+  <script src="JS/plank.js"></script>
+  
+</body>
+</html>
