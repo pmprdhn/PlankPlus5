@@ -8,8 +8,8 @@ const halfway= (totalTime*1000)/2;
 const pr= (mins*60)+secs;
 let timer = totalTime*1000;
 
-const audio = new Audio("../../sound/beep.mp3");
-const endAudio = new Audio("../../sound/end.mp3");
+const audio = new Audio("../sound/beep.mp3");
+const endAudio = new Audio("../sound/end.mp3");
 
 
 
